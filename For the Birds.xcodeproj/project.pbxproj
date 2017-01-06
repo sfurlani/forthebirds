@@ -302,6 +302,7 @@
 				757CDDDE1E201CF6002835AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
