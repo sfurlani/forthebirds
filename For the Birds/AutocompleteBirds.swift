@@ -22,7 +22,7 @@ class AutocompleteBirds: NSObject, AutoCompletionTextFieldDataSource {
         
         let json = try? JSONSerialization.jsonObject(with: contentData!, options: .allowFragments)
         
-        names = json as! [String]
+        names = (json as! [String]).sorted()
     }
     
     func fetchSuggestions(forIncompleteString: String!, withCompletionBlock completion: FetchCompletionBlock!) {
@@ -33,7 +33,7 @@ class AutocompleteBirds: NSObject, AutoCompletionTextFieldDataSource {
             return
         }
         
-        let search = names.filter { $0.localizedCaseInsensitiveContains(key) }.sorted().map { ["title":$0] }
+        let search = names.filter { $0.localizedCaseInsensitiveContains(key) }.map { ["title":$0] }
 
         completion?(search, key)
     }
