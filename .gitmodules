@@ -1,0 +1,3 @@
+[submodule "AutocompleteTextfieldSwift"]
+	path = AutocompleteTextfieldSwift
+	url = git@github.com:mnbayan/AutocompleteTextfieldSwift.git
