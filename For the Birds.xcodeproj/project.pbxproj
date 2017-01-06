@@ -12,6 +12,9 @@
 		757CDDD31E201CF6002835AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757CDDD11E201CF6002835AB /* Main.storyboard */; };
 		757CDDD51E201CF6002835AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 757CDDD41E201CF6002835AB /* Assets.xcassets */; };
 		757CDDD81E201CF6002835AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757CDDD61E201CF6002835AB /* LaunchScreen.storyboard */; };
+		757CDDFD1E20234D002835AB /* AutoCompletion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757CDDFC1E20234D002835AB /* AutoCompletion.framework */; };
+		757CDDFF1E20253F002835AB /* AutocompleteBirds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CDDFE1E20253F002835AB /* AutocompleteBirds.swift */; };
+		757CDE011E202746002835AB /* birds.json in Resources */ = {isa = PBXBuildFile; fileRef = 757CDE001E202746002835AB /* birds.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		757CDDD41E201CF6002835AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		757CDDD71E201CF6002835AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		757CDDD91E201CF6002835AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		757CDDFC1E20234D002835AB /* AutoCompletion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AutoCompletion.framework; path = "ios-autocomplete/Framework/AutoCompletion/build/Debug-iphoneos/AutoCompletion.framework"; sourceTree = "<group>"; };
+		757CDDFE1E20253F002835AB /* AutocompleteBirds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutocompleteBirds.swift; sourceTree = "<group>"; };
+		757CDE001E202746002835AB /* birds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = birds.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				757CDDFD1E20234D002835AB /* AutoCompletion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				757CDDCC1E201CF6002835AB /* For the Birds */,
 				757CDDCB1E201CF6002835AB /* Products */,
+				757CDDFB1E20234C002835AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +62,24 @@
 		757CDDCC1E201CF6002835AB /* For the Birds */ = {
 			isa = PBXGroup;
 			children = (
+				757CDE001E202746002835AB /* birds.json */,
 				757CDDCD1E201CF6002835AB /* AppDelegate.swift */,
 				757CDDCF1E201CF6002835AB /* ViewController.swift */,
 				757CDDD11E201CF6002835AB /* Main.storyboard */,
 				757CDDD41E201CF6002835AB /* Assets.xcassets */,
 				757CDDD61E201CF6002835AB /* LaunchScreen.storyboard */,
 				757CDDD91E201CF6002835AB /* Info.plist */,
+				757CDDFE1E20253F002835AB /* AutocompleteBirds.swift */,
 			);
 			path = "For the Birds";
+			sourceTree = "<group>";
+		};
+		757CDDFB1E20234C002835AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				757CDDFC1E20234D002835AB /* AutoCompletion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,7 +110,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = bizy;
+				ORGANIZATIONNAME = sfurlani;
 				TargetAttributes = {
 					757CDDC91E201CF6002835AB = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -126,6 +144,7 @@
 			files = (
 				757CDDD81E201CF6002835AB /* LaunchScreen.storyboard in Resources */,
 				757CDDD51E201CF6002835AB /* Assets.xcassets in Resources */,
+				757CDE011E202746002835AB /* birds.json in Resources */,
 				757CDDD31E201CF6002835AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				757CDDD01E201CF6002835AB /* ViewController.swift in Sources */,
+				757CDDFF1E20253F002835AB /* AutocompleteBirds.swift in Sources */,
 				757CDDCE1E201CF6002835AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -248,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -262,9 +282,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W76S6EH73C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ios-autocomplete/Framework/AutoCompletion/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "For the Birds/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bizy.For-the-Birds";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sfurlani.For-the-Birds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -275,9 +299,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W76S6EH73C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ios-autocomplete/Framework/AutoCompletion/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "For the Birds/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bizy.For-the-Birds";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sfurlani.For-the-Birds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

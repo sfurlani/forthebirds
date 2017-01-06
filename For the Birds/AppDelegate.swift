@@ -3,7 +3,7 @@
 //  For the Birds
 //
 //  Created by SFurlani on 1/6/17.
-//  Copyright © 2017 bizy. All rights reserved.
+//  Copyright © 2017 sfurlani. All rights reserved.
 //
 
 import UIKit

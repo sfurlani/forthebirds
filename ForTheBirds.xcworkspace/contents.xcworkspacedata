@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ios-autocomplete/Framework/AutoCompletion/AutoCompletion.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:For the Birds.xcodeproj">
    </FileRef>
 </Workspace>

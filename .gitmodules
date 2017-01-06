@@ -1,0 +1,3 @@
+[submodule "ios-autocomplete"]
+	path = ios-autocomplete
+	url = git@github.com:3pillarlabs/ios-autocomplete.git
