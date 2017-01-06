@@ -33,10 +33,6 @@ class ViewController: UIViewController, AutoCompletionTextFieldDelegate {
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func textField(_ textField: AutoCompletionTextField!, didSelectItem selectedItem: Any!) {
         print(selectedItem)
