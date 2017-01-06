@@ -15,27 +15,23 @@ class ViewController: UIViewController, AutoCompletionTextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        let filePath = Bundle.main.path(forResource: "birds", ofType: "json")
         
-        let contentData = FileManager.default.contents(atPath: filePath!)
-        
-        let json = try? JSONSerialization.jsonObject(with: contentData!, options: .allowFragments)
-        
-        let names = json as! [String]
-        
-        let dataSource = AutocompleteBirds(names: names)
+        let dataSource = AutocompleteBirds(filename: "birds")
         
         autocompletionTextField.suggestionsResultDataSource = dataSource
         
         autocompletionTextField.suggestionsResultDelegate = self
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        autocompletionTextField.becomeFirstResponder()
+    }
 
     
     func textField(_ textField: AutoCompletionTextField!, didSelectItem selectedItem: Any!) {
-        print(selectedItem)
         guard let item = selectedItem as? [String: String] else { return }
         textField.text = item["title"]
     }
